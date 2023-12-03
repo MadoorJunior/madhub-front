@@ -1,0 +1,75 @@
+.post{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    background-color: #f9f9fbff;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    .avatar{
+        flex: 0;
+        position: relative;
+        left: 10px;
+        top: 10px;
+        margin-right: 0;
+    }
+    .nickname{
+        font-weight: lighter;
+        font-style: italic;
+    }
+    .time{
+        position: relative;
+        top: -10px;
+        font-size: 0.9rem;
+        color: rgb(160, 156, 156);
+    }
+    .control {
+        position: absolute;
+        top: 10px;
+        right: 0;
+    }
+    .operate{
+        display: flex;
+        .heart {
+            flex: 0 0 50px;
+            width: 50px;
+            height: 50px;
+            background: url("./src/assets/heart1.png") no-repeat center;
+            background-position: 0 0;
+            cursor: pointer;
+            -webkit-transition: background-position 1s steps(28);
+            transition: background-position 1s steps(28);
+            -webkit-transition-duration: 0s;
+            transition-duration: 0s;
+        }
+        .likeNum {
+            position: relative;
+            left: -25px;
+        }
+        .active {
+            -webkit-transition-duration: 1s;
+            transition-duration: 1s;
+            background-position: -1400px 0;
+        }
+        .block{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #1d2b78ff;
+            cursor: pointer;
+            transition: all 0.4s;
+            border-radius: 10px;
+            height: 30px;
+            span{
+                display: inline-block;
+                font-size: 0.9rem;
+                font-weight: 100;
+                margin-left: 10px;
+            }
+            &:hover{
+                background-color: rgb(192, 182, 216);
+                color: #fff;
+            }
+        }
+    }
+}
+

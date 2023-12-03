@@ -1,0 +1,24 @@
+.box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 130px;
+  .upload {
+    width: 100px;
+    height: 100px;
+    border: 1px dashed black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: #faf7f7;
+    transition: all 0.3s;
+    &:hover{
+      background-color: white;
+    }
+  }
+  .img{
+    cursor: pointer;
+  }
+}

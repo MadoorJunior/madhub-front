@@ -1,0 +1,79 @@
+.emoji {
+  position: absolute;
+  top: 110px;
+}
+.container{
+  display: grid;
+  grid-template-rows: 0fr;
+  border-radius: 0 0 15px 15px;
+  background-color: rgba(249, 249, 251, 0.26);
+  box-shadow: 2px 4px 2px 5px rgba(249, 249, 251, 0.76);
+  transition: 0.3s;
+  overflow: hidden;
+  position: relative;
+
+  &>div{
+    margin: 0 !important;
+    min-height: 0;
+  }
+  .reply{
+    .text {
+      resize: none;
+      outline: none;
+      border-color: transparent;
+      border-bottom: #d0d9deff solid 1px;
+      font-size: 1.2rem;
+      width: 100%;
+    }
+    .operatorContainer{
+      display: flex;
+      align-items: center;
+      width: 28vw;
+      .icon {
+        cursor: pointer;
+        margin: 5px;
+        flex: 0 0 30px;
+        height: 30px;
+        border-radius: 50%;
+        color: #1d2b78ff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.2s;
+        &:hover {
+          background-color: #cec8d7ff;
+        }
+
+      }
+      .btn {
+        display: flex;
+        justify-content: right;
+        button{
+          padding: 10px;
+          margin-left: 10px;
+          background-color: #cec8d7ff;
+          border-radius: 15px;
+          cursor: pointer;
+          border: 0;
+          transition: 0.3s all;
+        }
+        .comment{
+          color: white;
+
+          &:hover {
+            background-color: #1d2b78ff;
+          }
+        }
+        .cancel{
+          background: #eaedef;
+          width: 60px;
+          &:hover {
+            background-color: #cec8d7ff;
+          }
+        }
+      }
+    }
+  }
+  div{
+  }
+}

@@ -1,0 +1,14 @@
+:where(.css-dev-only-do-not-override-1r3cab7).ant-upload-wrapper .ant-upload-select {
+  display: none;
+}
+.ant-upload-list-item-container div{
+  margin: 0;
+}
+ul .ant-image{
+  flex: none;
+  margin: 5px;
+}
+ul .ant-image-mask {
+  flex: none;
+  margin: 0;
+}

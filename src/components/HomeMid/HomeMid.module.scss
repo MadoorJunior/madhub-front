@@ -1,0 +1,60 @@
+.wrapper{
+    width: 36vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.pick {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    border: 1px solid #d0d9deff;
+    border-radius: 10px;
+    font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+    div {
+        flex: 1;
+        cursor: pointer;
+        line-height: 2.5rem;
+        font-size: 1.2rem;
+        position: relative;
+        padding: 5px 0px;
+        transition: all 0.2s;
+        color: #7d8a94ff;
+
+        &:hover {
+            background-color: rgb(231, 231, 232);
+            border-radius: 10px;
+        }
+
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            height: 2px;
+            background: #1d2b78ff;
+            width: 0; //初始宽度为0
+            left: 35%;
+            bottom: 0;
+            transition: width 0.2s;
+
+        }
+
+        &:hover::before {
+            width: 30%;
+        }
+    }
+
+    .selected {
+        color: black;
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            height: 2px;
+            background: #1d2b78ff;
+            width: 30%; //初始宽度为0
+            left: 35%;
+            bottom: 0;
+        }
+    }
+}
