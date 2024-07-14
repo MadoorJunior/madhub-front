@@ -1,6 +1,6 @@
 .emoji {
   position: absolute;
-  top: 110px;
+  top: 125px;
 }
 .container{
   display: grid;
@@ -11,7 +11,7 @@
   transition: 0.3s;
   overflow: hidden;
   position: relative;
-
+  width: 100%;
   &>div{
     margin: 0 !important;
     min-height: 0;
@@ -24,11 +24,14 @@
       border-bottom: #d0d9deff solid 1px;
       font-size: 1.2rem;
       width: 100%;
+      padding: 10px;
     }
     .operatorContainer{
+      padding: 5px;
+      padding-right: 15px;
       display: flex;
       align-items: center;
-      width: 28vw;
+      border-bottom: #d0d9de solid 1px;
       .icon {
         cursor: pointer;
         margin: 5px;
@@ -47,7 +50,7 @@
       }
       .btn {
         display: flex;
-        justify-content: right;
+        margin-left: auto;
         button{
           padding: 10px;
           margin-left: 10px;

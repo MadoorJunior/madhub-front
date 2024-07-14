@@ -1,26 +1,51 @@
 .post{
+    margin: 5px;
     display: flex;
     flex-direction: row;
     position: relative;
-    background-color: #f9f9fbff;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
-    .avatar{
-        flex: 0;
-        position: relative;
-        left: 10px;
-        top: 10px;
-        margin-right: 0;
+    border-bottom: #d0d9de solid 1px;
+
+    .content{
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
     }
+    .avatar{
+        flex-basis: 10%;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        .av{
+            cursor: pointer;
+            &:hover{
+                ~.card{
+                    display: block;
+                }
+            }
+        }
+        .card{
+            position: absolute;
+            left: 3rem;
+            display: none;
+        }
+    }
+    
     .nickname{
         font-weight: lighter;
         font-style: italic;
     }
     .time{
         position: relative;
-        top: -10px;
-        font-size: 0.9rem;
+        font-size: 0.8rem;
         color: rgb(160, 156, 156);
+    }
+    .text{
+        margin-top: 10px;
+    }
+    .pic{
+        margin-bottom: 10px;
     }
     .control {
         position: absolute;
@@ -29,6 +54,11 @@
     }
     .operate{
         display: flex;
+        margin-bottom: 10px;
+        div{
+            width: 80px;
+            margin-right: 20px;
+        }
         .heart {
             flex: 0 0 50px;
             width: 50px;
@@ -41,10 +71,7 @@
             -webkit-transition-duration: 0s;
             transition-duration: 0s;
         }
-        .likeNum {
-            position: relative;
-            left: -25px;
-        }
+        
         .active {
             -webkit-transition-duration: 1s;
             transition-duration: 1s;
@@ -52,6 +79,7 @@
         }
         .block{
             display: flex;
+            position: relative;
             justify-content: center;
             align-items: center;
             color: #1d2b78ff;
@@ -64,6 +92,10 @@
                 font-size: 0.9rem;
                 font-weight: 100;
                 margin-left: 10px;
+            }
+            .likeNum {
+                position: absolute;
+                right: 25px;
             }
             &:hover{
                 background-color: rgb(192, 182, 216);

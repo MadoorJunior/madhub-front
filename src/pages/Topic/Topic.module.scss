@@ -1,0 +1,47 @@
+.topicWrapper{
+    display: flex;
+    flex-wrap: wrap;
+    .topicItem{
+        background-color: #cec8d7;
+        margin-left: 15px;
+        margin-top: 8px;
+        padding: 0.5rem;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+}
+.topicCard{
+    border: #cec8d7 1px solid;
+    padding: 11px;
+    margin: 5px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    .left{
+        display: flex;
+        flex-direction: column;
+        .title{
+            cursor: pointer;
+            &:hover{
+                color: #cec8d7;
+
+            }
+        }
+        .description{
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            color: #696969;
+        }
+        .proper{
+            margin-top: auto;
+            font-size: 0.8rem;
+        }
+    }
+    .pic{
+        height: 100px;
+        margin-left: auto;
+    }
+}

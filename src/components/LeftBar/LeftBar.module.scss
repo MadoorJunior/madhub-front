@@ -1,19 +1,19 @@
 .leftBar{
-  position: sticky;
-  top: 20px;
-  height: 97vh;
-  margin: 0!important;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   border-right: #eaedef solid 1px;
+  position: fixed;
+  width: 20vw;
   .top{
     list-style: none;
     font-size: 1.3rem;
     font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
-
+    
     li{
       margin-left: 10px;
       margin-top: 10px;
+      margin-right: 10px;
       padding: 10px;
       cursor: pointer;
       border-radius: 10px;
@@ -31,18 +31,17 @@
   }
   .bottom {
     background: #f8f6f6;
-    justify-self: flex-end;
     flex: 0 0 60px;
+    margin-top: auto;
     border-radius: 30px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
+    justify-content: space-evenly;
     div{
       margin: 0!important;
     }
     .avatar{
-      padding-left: 15px;
     }
     .userInfo{
       display: flex;

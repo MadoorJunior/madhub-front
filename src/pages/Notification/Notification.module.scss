@@ -1,11 +1,4 @@
-.wrapper{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0;
-    margin: 0 !important;
-}
-.pick {
+.head{
     display: flex;
     flex-direction: row;
     text-align: center;
@@ -43,7 +36,6 @@
             width: 30%;
         }
     }
-
     .selected {
         color: black;
         &::before {
@@ -55,6 +47,51 @@
             width: 30%; //初始宽度为0
             left: 35%;
             bottom: 0;
+        }
+    }
+}
+.like{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 5px;
+    border-bottom: 1px #7d8a94ff solid;
+    .info{
+        margin-left: 10px;
+    }
+    .from{
+        display: flex;
+        .name{
+            font-size: 1rem;
+            font-weight: 400;
+        }
+        .time{
+            font-size: 0.7rem;
+            color: #7d8a94ff;
+        }
+    }
+    .info{
+        margin-left: 10px;
+    }
+    .text{
+        margin-top: 5px;
+        
+    }
+    .content{
+        background-color: #f1f3f5;
+        border-radius: 5px;
+        padding: 10px;
+        margin-top: 5px;
+        display: flex;
+        .to{
+            font-size: 1.1rem;
+        }
+        .overview{
+            overflow: hidden;
+            text-overflow: ellipsis;
+            color: #696969;
+            display:-webkit-box; //作为弹性伸缩盒子模型显示。
+            -webkit-box-orient:vertical; //设置伸缩盒子的子元素排列方式--从上到下垂直排列
+            -webkit-line-clamp:2; //显示的行
         }
     }
 }
